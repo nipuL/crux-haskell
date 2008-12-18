@@ -1,0 +1,19 @@
+# Description:
+# URL:
+# Maintainer:
+# Packager:
+# Depends on: ghc
+
+name=darcs
+version=2.0.2
+release=1
+source=(http://darcs.net/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	    --mandir=/usr/man \
+	    --without-docs
+	make
+	make DESTDIR=$PKG install
+}

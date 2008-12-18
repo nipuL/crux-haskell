@@ -1,0 +1,15 @@
+PRE-INSTALL:
+
+	To compile ghc you need a working ghc compiler. Install ghc-binary port
+	for the build process. After you have build ghc from source, remove the
+	ghc-binary port, then install ghc.
+
+	You will no longer need to use ghc-binary as long as you have ghc
+	installed.
+
+	Example of the workflow:
+
+	# prt-get depinst ghc-binary
+	# prt-get install ghc --config-append="addcommand true"
+	# prt-get remove ghc-binary
+	# prt-get install ghc

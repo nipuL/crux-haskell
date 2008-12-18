@@ -1,0 +1,13 @@
+#!/bin/sh
+
+DIR=/usr/lib/gtk2hs
+unregister() {
+    cd $DIR
+    for f in *.package.conf
+    do
+       p="`echo $f | sed 's/.package.conf//'`"
+       ghc-pkg unregister $p -g
+    done
+}
+
+[ -d $DIR ] && unregister

@@ -1,0 +1,18 @@
+# Description: Haskell compiler
+# URL: http://www.haskell.org/haskellwiki/Glasgow_Haskell_Compiler
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: libgmp
+
+name=ghc
+version=6.10.1
+release=1
+source=(http://www.haskell.org/ghc/dist/$version/$name-$version-src.tar.bz2 http://www.haskell.org/ghc/dist/$version/$name-$version-src-extralibs.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	mkdir -p $PKG/usr/{bin,lib}
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}

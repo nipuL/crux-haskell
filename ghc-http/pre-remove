@@ -1,0 +1,4 @@
+#!/bin/sh
+
+UNREGISTER=/usr/share/ghc/ghc-http/unregister.sh
+[ -x $UNREGISTER ] && $UNREGISTER

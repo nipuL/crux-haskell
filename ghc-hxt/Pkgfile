@@ -1,0 +1,17 @@
+# Description: The Haskell XML Toolbox
+# URL: http://www.fh-wedel.de/~si/HXmlToolbox/index.html
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+
+name=ghc-hxt
+distname=hxt
+version=7.4
+release=1
+source=(http://hackage.haskell.org/packages/archive/$distname/$version/$distname-$version.tar.gz)
+
+build() {
+	cd $distname-$version
+	runghc Setup.lhs configure --prefix=/usr --libsubdir='$compiler/lib/$pkgid'
+	runghc Setup.lhs build
+	runghc Setup.lhs copy --destdir=$PKG
+	rm -rf $PKG/usr/share
+}

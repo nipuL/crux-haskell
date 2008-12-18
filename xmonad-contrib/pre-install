@@ -1,0 +1,4 @@
+#!/bin/sh
+
+UNREGISTER=/usr/share/ghc/xmonad-contrib/unregister.sh
+[ -x $UNREGISTER ] && $UNREGISTER

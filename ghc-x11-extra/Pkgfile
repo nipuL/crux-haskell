@@ -1,0 +1,27 @@
+# Description: A Haskell binding to the X11 graphics library.
+# URL: http://hackage.haskell.org/cgi-bin/hackage-scripts/package/X11-extras
+# Maintainer: Lucas Hazel <lucas@die.net.au>
+# Depends on: xorg-libxinerama ghc-x11
+
+name=ghc-x11-extras
+version=0.4
+release=1
+source=(http://hackage.haskell.org/packages/archive/X11-extras/$version/X11-extras-$version.tar.gz)
+
+build() {
+	cd X11-extras-$version
+	runghc Setup.lhs configure -g --prefix=/usr \
+		--libsubdir='$compiler/lib/$pkgid'
+
+	runghc Setup.lhs build
+
+	runghc Setup.lhs register --gen-script
+	runghc Setup.lhs unregister --gen-script
+
+	install -D -m744 register.sh $PKG/usr/share/ghc/$name/register.sh
+	install -m744 unregister.sh $PKG/usr/share/ghc/$name/unregister.sh
+
+	runghc Setup.lhs copy --destdir=$PKG
+
+	rm -rf $PKG/usr/share/doc
+}
