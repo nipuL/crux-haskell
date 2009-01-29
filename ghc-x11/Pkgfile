@@ -4,7 +4,7 @@
 # Depends on: ghc
 
 name=ghc-x11
-version=1.4.2
+version=1.4.5
 release=1
 source=(http://hackage.haskell.org/packages/archive/X11/$version/X11-$version.tar.gz)
 
