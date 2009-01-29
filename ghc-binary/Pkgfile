@@ -3,7 +3,7 @@
 # Maintainer: Lucas Hazel <lucas@die.net.au>
 # Depends on: libgmp
 
-name=ghc
+name=ghc-binary
 version=6.10.1
 release=1
 source=(http://www.haskell.org/ghc/dist/$version/$name-$version-x86_64-unknown-linux.tar.bz2)
