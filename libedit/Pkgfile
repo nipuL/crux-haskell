@@ -1,0 +1,20 @@
+# Description: Editline Library
+# URL: http://www.thrysoee.dk/editline/
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: 
+
+name=libedit
+version=0.3
+release=1
+source=(http://dl.sf.net/$name/$name-$version.tar.gz)
+
+build () {
+    export CFLAGS="$CFLAGS -fPIC"
+    cd $name
+    ./configure --prefix=/usr \
+	--disable-nls
+    make
+    make prefix=$PKG/usr install
+    ln -s $name.so $PKG/usr/lib/$name.so.0
+    rm -rf $PKG/usr/include/readline
+}
