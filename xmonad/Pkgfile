@@ -4,7 +4,7 @@
 # Depends on: ghc-x11
 
 name=xmonad
-version=0.8
+version=0.8.1
 release=1
 source=(http://hackage.haskell.org/packages/archive/$name/$version/$name-$version.tar.gz)
 
