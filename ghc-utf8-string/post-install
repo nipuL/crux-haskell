@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/share/ghc/ghc-utf8-string/register.sh --force"

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+UNREGISTER="/usr/share/ghc/ghc-utf8-string/unregister.sh --force"
+[ -x $UNREGISTER ] && $UNREGISTER
