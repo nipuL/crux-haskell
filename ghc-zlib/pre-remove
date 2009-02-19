@@ -1,0 +1,4 @@
+#!/bin/sh
+
+UNREGISTER=/usr/share/ghc/ghc-zlib/unregister.sh
+[ -x $UNREGISTER ] && $UNREGISTER
