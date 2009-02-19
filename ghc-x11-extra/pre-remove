@@ -1,4 +1,0 @@
-#!/bin/sh
-
-UNREGISTER=/usr/share/ghc/ghc-x11-extras/unregister.sh
-[ -x $UNREGISTER ] && $UNREGISTER
