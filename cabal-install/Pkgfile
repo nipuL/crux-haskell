@@ -1,0 +1,17 @@
+# Description: Command-line interface for Cabal
+# URL: http://hackage.haskell.org/trac/hackage/wiki/CabalInstall
+# Maintainer: Lucas Hazel, lucas at die dot net dot au
+# Depends on: ghc-http ghc-zlib
+
+name=cabal-install
+version=0.6.0
+release=1
+source=(http://hackage.haskell.org/packages/archive/$name/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	runghc Setup configure --prefix=/usr
+	runghc Setup build
+	runghc Setup copy --destdir=$PKG
+	rm -rf $PKG/usr/share
+}
