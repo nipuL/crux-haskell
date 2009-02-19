@@ -18,6 +18,9 @@ build() {
 	runghc Setup.hs register --gen-script
 	runghc Setup.hs unregister --gen-script
 
+        sed 's/ghc-pkg/& --force/' -i register.sh
+	sed 's/ghc-pkg/& --force/' -i unregister.sh
+
 	install -D -m744 register.sh $PKG/usr/share/ghc/$name/register.sh
 	install -m744 unregister.sh $PKG/usr/share/ghc/$name/unregister.sh
 
