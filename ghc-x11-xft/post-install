@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/share/ghc/ghc-x11-xft/register.sh --force"

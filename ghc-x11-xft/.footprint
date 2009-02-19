@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/ghc-6.10.1/
+drwxr-xr-x	root/root	usr/lib/ghc-6.10.1/lib/
+drwxr-xr-x	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/
+drwxr-xr-x	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/Graphics/
+drwxr-xr-x	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/Graphics/X11/
+-rw-r--r--	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/Graphics/X11/Xft.hi
+-rw-r--r--	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/Graphics/X11/Xrender.hi
+-rw-r--r--	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/HSX11-xft-0.3.o
+-rw-r--r--	root/root	usr/lib/ghc-6.10.1/lib/X11-xft-0.3/libHSX11-xft-0.3.a
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/ghc/
+drwxr-xr-x	root/root	usr/share/ghc/ghc-x11-xft/
+-rwxr--r--	root/root	usr/share/ghc/ghc-x11-xft/register.sh
+-rwxr--r--	root/root	usr/share/ghc/ghc-x11-xft/unregister.sh

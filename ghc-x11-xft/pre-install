@@ -1,0 +1,4 @@
+#!/bin/sh
+
+UNREGISTER="/usr/share/ghc/ghc-x11-xft/unregister.sh --force"
+[ -x $UNREGISTER ] && $UNREGISTER
