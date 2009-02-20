@@ -4,7 +4,7 @@
 # Depends on: ghc
 
 name=ghc-http
-version=3001.1.5
+version=4000.0.4
 release=1
 source=(http://hackage.haskell.org/packages/archive/HTTP/$version/HTTP-$version.tar.gz)
 
