@@ -4,7 +4,7 @@
 # Depends on: gtk, ghc
 
 name=gtk2hs
-version=0.9.13
+version=0.10.0
 release=1
 source=(http://dl.sf.net/$name/$name-$version.tar.gz)
 
