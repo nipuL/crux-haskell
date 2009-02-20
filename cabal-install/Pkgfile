@@ -4,7 +4,7 @@
 # Depends on: ghc-http ghc-zlib
 
 name=cabal-install
-version=0.6.0
+version=0.6.2
 release=1
 source=(http://hackage.haskell.org/packages/archive/$name/$version/$name-$version.tar.gz)
 
